@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinturillo</title>
+    <link rel="stylesheet" href="/main.css">
+    <!--<link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">-->
+    <link rel="stylesheet" href="/estilo.css">
+    <style>
+        #addScroll{
+          overflow-y:auto;
+          height: 580px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="canvas-container">
+        <a href="/" class="clear-action" >Limpiar</a>
+        <canvas width="600" height="600" class="canvas"></canvas>
+    </div>
+    <div class="chat">
+        <ul class="message-container" id="addScroll">
+        </ul>
+        <form class="chat-form">
+            <input type="text" name="nick" placeholder="Nombre" required>
+            <input type="text" name="message" placeholder="Mensaje" >
+            <input type="submit">
+        </form>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
